@@ -17,9 +17,8 @@ namespace SUS
 
                 if (file is BinaryRobloxFile)
                 {
-
                     RobloxFile newfile = new XmlRobloxFile();
-
+                    
                     foreach (Instance des in file.GetChildren())
                     {
                         des.Parent = newfile;
